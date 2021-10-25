@@ -1,0 +1,81 @@
+.property-list {
+  width: 100%;
+  padding: 20px 12px 15px;
+  color: #9093a3;
+  text-align: left;
+}
+
+.property-cell {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding-bottom: 12px;
+}
+
+.property-title {
+  width: 70px;
+  font-size: 12px;
+}
+
+.property-checkbox + .property-checkbox {
+  margin-left: 10px;
+}
+
+.checkbox-item {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.checkbox-item + label {
+  display: inline-block;
+  padding: 0 10px;
+  border: 1px solid #9093a3;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.checkbox-item:checked + label {
+  border-color: #3987d5;
+  color: #3987d5;
+}
+
+.price-total {
+  font-size: 16px;
+  color: #333;
+}
+
+.payment-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.payment-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 88px;
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+.payment-item img {
+  width: 100%;
+}
+
+.payment-item + .payment-item {
+  margin-left: 20px;
+}
+
+.wechat-active {
+  border-color: #97cb44;
+}
+
+.alipay-active {
+  border-color: #3987d5;
+}

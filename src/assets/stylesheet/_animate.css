@@ -1,0 +1,63 @@
+@keyframes circle {
+  0% {
+    transform: rotate(0)
+  }
+  50% {
+    transform: rotate(180deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+@-webkit-keyframes circle {
+  0% {
+    -webkit-transform: rotate(0)
+  }
+  50% {
+    -webkit-transform: rotate(180deg)
+  }
+  100% {
+    -webkit-transform: rotate(360deg)
+  }
+}
+
+.circle {
+  transform-origin: center;
+  -webkit-transform-origin: center;
+  animation: circle 1s linear infinite;
+  -webkit-animation: circle 1s linear infinite;
+}
+
+.swipe-in {
+  transition: all .3s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translate3d(0, 0, 0)
+  }
+  10%, 50%, 90% {
+    transform: translate3d(-10px, 0, 0)
+  }
+  30%, 70% {
+    transform: translate3d(10px, 0, 0)
+  }
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  10%, 50%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+  }
+  30%, 70% {
+    -webkit-transform: translate3d(10px, 0, 0);
+  }
+}
+
+.shake {
+  animation: shake 0.3s;
+  -webkit-animation: shake 0.3s;
+}

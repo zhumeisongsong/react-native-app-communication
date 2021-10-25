@@ -1,0 +1,21 @@
+.amap-logo {
+  display: none !important;
+}
+
+.amap-copyright {
+  visibility: hidden !important;
+}
+
+.map-container {
+  width: 100%;
+  height: 40vh;
+}
+
+.amap-marker-label {
+  left: -30px !important;
+  top: 100% !important;
+  width: 80px;
+  border: none;
+  white-space: normal;
+  text-align: center;
+}

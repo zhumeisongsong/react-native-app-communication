@@ -1,0 +1,249 @@
+body {
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  overflow: auto;
+}
+
+div, section, header, footer,
+input, button, ul, li, label {
+  box-sizing: border-box;
+}
+
+a {
+  box-sizing: border-box;
+  color: #333;
+}
+
+a:hover {
+  color: #333;
+}
+
+p {
+  text-align: justify;
+  word-break: break-all;
+}
+
+input {
+  outline: none;
+  -webkit-appearance: none;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+
+}
+
+button {
+  outline: none;
+}
+
+time {
+  display: block;
+  padding-top: 10px;
+  font-size: 12px;
+  color: #b3b3b3;
+}
+
+img {
+  width: 100%;
+  border: none;
+}
+
+/**
+ *border .5px hack
+ */
+
+.ui-border-radius {
+  position: relative;
+  border: 0;
+}
+
+.ui-border-radius::before {
+  content: "";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #e0e0e0;
+  -webkit-transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+  padding: 1px;
+  -webkit-box-sizing: border-box;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.ui-border {
+  position: relative;
+  border: 0;
+}
+
+.ui-border::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0)), -webkit-gradient(linear, left top, right top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0)), -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0)), -webkit-gradient(linear, right top, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
+  -webkit-background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+  background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+  background-repeat: no-repeat;
+  background-position: top, right, bottom, left;
+  padding: 1px;
+  -webkit-box-sizing: border-box;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.ui-border-t, .ui-border-b, .ui-border-l, .ui-border-r, .ui-border-tb {
+  border: 0;
+}
+
+.ui-border-t {
+  background-position: left top;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
+}
+
+.ui-border-b {
+  background-position: left bottom;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
+}
+
+.ui-border-t,
+.ui-border-b,
+.ui-border-tb {
+  background-repeat: repeat-x;
+  -webkit-background-size: 100% 1px;
+}
+
+.ui-border-tb {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0)), -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
+  background-position: top, bottom;
+}
+
+.ui-border-l {
+  background-position: left top;
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
+}
+
+.ui-border-r {
+  background-position: right top;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
+}
+
+.ui-border-l,
+.ui-border-r {
+  background-repeat: repeat-y;
+  -webkit-background-size: 1px 100%;
+}
+
+.image-con {
+  background: center #eee no-repeat;
+  background-size: cover;
+}
+
+.image-free-con {
+  width: 100%;
+}
+
+.image-con img {
+  width: 100%;
+}
+
+.btn-default {
+  color: #fff;
+  background-color: #3987d5;
+  border: 1px solid #3987d5;
+}
+
+.btn-default-o {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #3987d5;
+}
+
+.btn-large {
+  width: 100%;
+  height: 45px;
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+.box-shadow {
+  box-shadow: 0px 2px 5px rgba(23, 56, 130, .2);
+}
+
+.border-radius {
+  border-radius: 3px;
+}
+
+.image-holder {
+  background-size: 50px auto !important;
+}
+
+.photo-holder {
+  background-size: 30px auto !important;
+  background-color: #ddd;
+}
+
+.position-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.position-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.main-con {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.scroll-con {
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  width: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-nav {
+  top: 0;
+}
+
+.padding-bottom {
+  padding-bottom: 45px !important;
+}
+
+.holder-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #666;
+  text-align: center;
+}
+
+.border-radius-lg{
+  border-radius: 10px;
+}
+
+@import "_animate.css";

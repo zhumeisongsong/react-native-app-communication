@@ -1,0 +1,33 @@
+.comment-submit {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  background-color: #fff;
+}
+
+.comment-submit .input-con {
+  flex-grow: 1;
+  height: 100%;
+  padding: 5px 6px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border: 1px solid #ddd;
+  border-right-width: 0;
+}
+
+.comment-submit .input-con input {
+  width: 100%;
+  height: 28px;
+  line-height: 28px;
+  font-size: 16px;
+}
+
+.comment-submit button {
+  width: 80px;
+  height: 100%;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-size: 16px;
+}
+

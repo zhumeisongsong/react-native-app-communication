@@ -1,0 +1,108 @@
+@import "base.css";
+
+.detail-common {
+  position: relative;
+  width: 100%;
+}
+
+.detail-common .image-con {
+  width: 100%;
+  padding-top: 62%;
+}
+
+.common-item {
+  position: relative;
+  width: 100%;
+  padding: 15px 12px;
+}
+
+.detail-title {
+  margin: 0;
+  padding-right: 33px;
+  font-weight: normal;
+}
+
+.icon-heart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 26px;
+  padding: 15px 12px;
+}
+
+.detail-price {
+  margin: 0;
+  padding-top: 10px;
+  color: #3987d5;
+}
+
+.rich-text {
+  width: 100%;
+  padding: 0 12px 15px 12px;
+  text-align: justify;
+  line-height: 1.4;
+  color: #555;
+}
+
+.rich-text img {
+  display: block;
+  max-width: 100%;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 auto;
+}
+
+.detail-customized {
+  width: 100%;
+  padding: 15px 12px;
+}
+
+.customized-item {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding-bottom: 10px;
+  line-height: 1.6;
+}
+
+.customized-item p {
+  margin: 0;
+}
+
+p.item-name {
+  min-width: 70px;
+  font-size: 12px;
+  color: #9093a3;
+  line-height: 1.8;
+}
+
+p.item-content {
+  flex-grow: 1;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.customized-item img {
+  display: block;
+  width: auto;
+  /*position: absolute;*/
+  /*top: 20px;*/
+  /*left: 0;*/
+  /*width: 50px;*/
+  /*background-color: #eee;*/
+  max-width: 100%;
+  height: auto!important;
+}
+
+.subImage{
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 50px!important;
+  background-color: #eee;
+}
+
+.explore-detail .detail-title {
+  padding-right: 0;
+}

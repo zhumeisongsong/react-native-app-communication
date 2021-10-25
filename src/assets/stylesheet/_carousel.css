@@ -1,0 +1,17 @@
+.slider-decorator-0 {
+  bottom: 10px !important;
+}
+
+.carousel-item {
+  position: relative;
+  display: inline-block;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.carousel-item .image-con {
+  width: 100%;
+  height: 100%;
+  background: center #eee no-repeat;
+  background-size: cover;
+}
